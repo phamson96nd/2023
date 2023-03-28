@@ -1,0 +1,57 @@
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    overflow: hidden;
+    background: #1bbe9e;
+    color: #fff;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bg {
+    fill: none;
+    stroke: #1bbe9e;
+    stroke-width: 4;
+}
+
+.loader {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-dasharray: 288;
+    animation: line 4s linear infinite, spin 3s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes line {
+    from {
+        stroke-dashoffset: 1152;
+    }
+
+    to {
+        stroke-dashoffset: 576;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(-90deg);
+    }
+
+    100% {
+        transform: rotate(270deg);
+    }
+}
+
