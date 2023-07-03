@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.nav {
+    display: inline;
+}
+
+.nav li {
+    display: inline-block;
+    position: relative;
+}
+
+.nav > li:hover > a,
+.nav .subnav li:hover a
+{
+    color: #000;
+    background-color: #ccc;
+}
+
+.nav > li > a {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    display: inline-block;
+    padding: 0 24px;
+}
+
+.nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
+    min-width: 160px;
+}
+
+.nav li:hover .subnav {
+    display: block;
+}
+
+.nav .subnav li {
+    width: 100%;
+}
+
+.nav .subnav a {
+    color: #000;
+    display: block;
+    line-height: 38px;
+}
+
+.nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+.search-btn {
+    float: right;
+    color: #fff;
+    line-height: 46px;
+    padding: 0 21px;
+}
+
+.search-btn:hover {
+    cursor: pointer;
+    background-color: #f44336;
+}
+
+#slider {
+    margin-top: 46px;
+    padding-top: 50%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-image: url(../imgs/chicago.jpg);
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+#slider .text-description {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#content {
+
+}
+
+#content .content-section {
+    width: 800px;
+    margin: 0 auto;
+    padding: 64px 0;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    font-style: italic;
+    margin-top: 25px;
+    opacity: 0.6;
+}
+
+#content .about {
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#content .member {
+    margin-top: 48px;
+}
+
+#content .member-item {
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+}
+
+#content .member-name {
+    font-size: 15px;
+}
+
+#content .menber-img {
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+
+.tour-section {
+    background: #000000;
+}
+
+.tour-section .ticket-list {
+    background-color: #ffffff;
+    margin-top: 40px;
+}
+
+.ticket-list li {
+    font-size: 15px;
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #775577;
+    list-style: none;
+}
+
+.ticket-list .sold-out {
+    color: #fff;
+    background-color: #f44336;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+.ticket-list .quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+
+.places-list {
+    margin: 32px -8px 0;
+    padding-bottom: 48px;
+}
+
+.places-list .place-item {
+    width: 33.3333%;
+    padding: 0 8px;
+    float: left;
+}
+
+.places-list .place-img {
+    width: 100%;
+    display: block;
+}
+
+.places-list .place-img:hover {
+    opacity: .6;
+}
+
+.places-list .place-body {
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.places-list .place-heading {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.places-list .place-time {
+    margin-top: 15px;
+    color: #775577;
+}
+.places-list .place-desc {
+    margin-top: 15px;
+}
+
+.places-list .place-buy-btn {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #000;
+    padding: 11px 15px;
+    display: inline-block;
+    margin: 15px 0;
+}
+
+.places-list .place-buy-btn:hover {
+    background-color: #cccccc;
+    color: #000000;
+    cursor: pointer;
+}
