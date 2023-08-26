@@ -1,0 +1,49 @@
+body {
+    font-size: 22px;
+    color: $gray-darker;
+    font-weight: 400;
+    line-height: 1;
+    font-family: $font-primary;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: $font-primary;
+    line-height: calc(33 / 22);
+    padding: 13px 50px;
+    border: 0;
+    outline: none;
+    border-radius: 100rem;
+    cursor: pointer;
+    &--white {
+        background-color: white;
+        color: $gray-light;
+    }
+
+    &--primary {
+        color: white;
+        background-color: $secondary-color;
+    }
+}
+
+.global {
+    &-heading {
+        color: $primary-color;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 180%;
+        margin-bottom: 20px;
+        span {
+            color: $secondary-color;
+        }
+    }
+
+    &-text {
+        font-size: 24px;
+        line-height: 180%;
+        color: $gray;
+    }
+
+}
